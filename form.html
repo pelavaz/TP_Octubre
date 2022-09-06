@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+<style>
+
+aside { 
+
+    width:45vw;
+    float:right;
+    background-color: lightgray;
+    padding: 25px;
+    padding-left: 20px;
+    padding-right: 0px;
+    border-radius: 15px;
+    margin:10px;
+    position:absolute;
+    right:0px;
+    margin-top: 10px
+  
+  
+
+
+}
+
+
+article {
+
+    text-align: center;
+    border-right-width: 10px;
+    border-right-style:inset;
+    text-align: center;
+    padding:25px;
+    margin:10px;
+    background-color: salmon;
+    color:white;
+    border-radius: 50px;
+    min-width:200px
+  
+
+}
+
+.hr {
+  height: 3px;
+  background-color: black;
+}
+
+section {
+
+    text-align: center;
+    border-right-width: 10px;
+    border-right-style:double;
+    float:left;
+    width: 42%;
+    padding:25px;
+    margin:10px;
+    background-color: grey;
+    color:white;
+    border-radius: 15px;
+    position: relative;
+    right:0px;
+    top:0px
+   
+    
+
+}
+
+h1 {
+
+font-size: 36px;
+font-family:'Times New Roman', Times, serif;
+font-weight: bold
+
+
+}
+
+.container {
+  margin:20px;
+  border-radius: 50px;
+  height: 200px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgrey;
+  border-style: inset;
+  border-color: black;
+  border-width: 3px;
+  text-align: center;
+
+}
+
+.foto1 {
+
+   margin: 20px;
+   width: 150px; 
+   height:150px;
+   background-image: url("123926684_385155566244809_475210941965345709_n.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 100px;
+   text-align: left;
+  border-color: black;
+  border-width: 3px;
+  border-style: inset;
+  
+
+}
+
+.foto2 {
+
+   margin: 20px;
+   width: 150px; 
+   height:150px;
+   background-image: url("145795035_469374768053385_5851817656285810706_n.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 100px;
+   border-color: black;
+   border-width: 3px;
+   border-style: inset;
+  
+
+}
+
+.foto3 {
+
+margin: 20px;
+width: 150px; 
+height:150px;
+background-image: url("266886230_169445898820712_5052374150934331946_n.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 100px;
+text-align: right;
+border-color: black;
+border-width: 3px;
+border-style: inset;
+
+}
+
+.iframe {
+
+    border-radius: 100px;
+   border-color: red;
+   border-width: 3px;
+   border-style: inset;
+   width:70%;
+
+
+
+}
+
+</style>
+
+<script src="https://kit.fontawesome.com/fc6033ad3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+<nav>
+
+
+</nav>
+</header>
+
+<aside>
+
+   <h1> Dejanos tu consulta!  <span class="fa-solid fa-comments"></span></h1>
+   <form
+   action="https://formspree.io/f/xayknqaz"
+   method="POST">
+
+   <fieldset>
+    <legend style="font-size:25px"><b>Datos personales <span class="fa-sharp fa-solid fa-user"></span></b></legend>
+
+
+   <!-- Ingreso del nombre -->
+    <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aqui..." required>
+        <br><br>
+
+          <!-- Ingreso del apellido -->
+          <label for="apellido">Apellido: </label>
+          <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aqui..." required>
+          <br><br>
+
+      <!-- Ingreso de direccion -->
+      <label for="dir">Direccion: </label>
+      <input type="text" name="Direccion" id="dir" placeholder="Ingrese su dirección aqui..." required>
+      <br><br>
+      
+      <!-- Ingreso de Ciudad -->
+      <label for="ciu">Ciudad: </label>
+      <input type="text" name="Ciudad" id="ciu" value="C.A.B.A">
+      <br><br>
+
+  <!-- Ingreso del apellido -->
+  <label for="codigo postal">Codigo postal: </label>
+  <input type="number" name="codigo postal" id="codigo postal" placeholder="Ingrese su codigo postal aqui...">
+  <br><br>
+
+  
+  <!-- Ingreso del apellido -->
+  <label for="fecha nac">Fecha de nacimiento (dd/mm/aaaa):</label>
+  <input type="date" name="fecha nac" id="fecha nac" >
+  <br><br>
+  </fieldset>
+  <br>
+
+  <fieldset>
+    <legend style="font-size:25px"><b>Nivel de satisfacción <span class="fa-sharp fa-solid fa-check"></span></b></legend>
+
+ <!-- Control deslizante-->
+ <label for="puntaje"> Puntuación de la empresa: </label>
+ <input type="range" name="puntaje" id="puntaje" min="1" max="10" value="10" step="1" >
+ <!-- step="1" (el paso, min="1" max="10" value="10" (valor por defeto) -->
+ <br><br>
+
+     <b style="font-size:20px">¿Qué fue lo que más le gustó?</b> <br><br>
+            <select name='Opinion' multiple='multiple' id="Opinion">
+                <option value='experiencia de compra'>Experiencia de compra</option>
+                <option value='variedad de articulos'>Variedad de artículos</option>
+                <option value='velocidad de entrega'>Velocidad de Entrega</option>
+                <option value='otro'>Otro</option>
+              </select>
+            <br><br>
+
+
+</fieldset>
+<br><br>
+<b>Your message:</b><br>
+<textarea name="message" cols="40" rows="5"></textarea>
+
+
+  <br><br>
+  <button type="reset">Borrar</button>
+  <input type="submit" value="Enviar datos">
+  <br><br>
+
+
+</form>
+
+</aside>
+
+<section>  
+<h1>
+Quienes somos   <span class="fa-sharp fa-solid fa-house" style="color:white"></span>
+</h1> 
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, voluptas? In commodi, dolor quasi excepturi consectetur porro nihil ipsam numquam fugit eos distinctio similique harum asperiores voluptatibus obcaecati mollitia unde nobis, aspernatur velit, veritatis nulla dolorum vero ipsum quis? Impedit eaque distinctio et dolore, aspernatur soluta eum sequi nostrum animi!</p>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia asperiores rerum nesciunt provident nisi, animi saepe, voluptate quo rem architecto ea corrupti eaque eligendi laudantium temporibus sint. Officia nemo, eius consequuntur ullam possimus pariatur ea illo voluptatibus suscipit repellat corrupti distinctio quidem fugit quod a doloribus tenetur? Officia, aliquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, culpa perspiciatis? Dolore adipisci reiciendis blanditiis necessitatibus sint. Ab nesciunt cumque incidunt adipisci quia! Ipsum, suscipit. Ex reiciendis minus ullam rem quia omnis libero impedit iure totam asperiores facilis quae, eveniet perspiciatis sequi, ad debitis accusamus magni, aspernatur natus error. Ad.</p>
+<br><br>
+
+<h2> Fundado en 1975</h2>
+<h2> Integrantes:</h2>
+<div class="container">
+<div class="foto1"></div>
+<div class="foto2"></div>
+<div class="foto3"></div>
+</div>
+    <br><br>
+
+    <div class="hr"></div>
+    <br>
+
+<article> 
+
+<h1> ¿Dónde encontrarnos? <br> <span class="fa-solid fa-map-location-dot fa-2x"></span><br></h1>
+<br>
+
+<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3855016182447!2d-58.404556984770494!3d-34.5944121804619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca908d89b80f%3A0xdd304872ef2d09e0!2sAv.%20Santa%20Fe%20%26%20Av.%20Pueyrred%C3%B3n%2C%20C1015%20CABA!5e0!3m2!1ses!2sar!4v1662496590901!5m2!1ses!2sar" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</article>
+</section>
+</body>
+</html>
