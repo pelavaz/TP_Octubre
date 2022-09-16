@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(245, 250, 247);
+    margin: 0%;
+        
+}
+header{
+    background-color: rgb(11, 178, 76);
+    border-top: 2px solid black;
+    height: 25vh;
+    width: 100%;
+    font-family: Helvetica, Arial;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    color: rgb(245, 250, 247); 
+}
+header h1{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: 80%;
+    font-size: 3em;
+    margin: 2px;
+    padding: 1px;
+    width: 60%;
+}
+
+header h3{
+    font-weight: 80%;
+    font-size: 1em;
+    margin: 1px;
+    padding: 1px;
+    width: 60%;
+
+}
+
+header img{
+    height: 100%;
+    float: right;
+    margin-right: 20vw;
+    border-radius: 50%;
+   
+
+}
+nav{
+    display: block;
+    width: 100%;
+    margin-left: -30px;
+    position: sticky;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    display: block;
+}
+nav ul li{
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgb(11, 165, 76);
+    height: 13px;
+    float: left;
+    overflow: hidden;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: aliceblue;
+    padding: 1px;
+
+}
+
+li:hover{
+    color: rgb(4, 73, 7);
+    cursor: pointer;
+   
+}
+
+main{
+    padding: 2px;
+    margin: 2%;
+}
+
+
+footer{
+    background-color: rgb(11, 178, 76);
+    border-top: 2px solid black;
+    height: 15vh;
+    width: 100%;
+    font-family: Helvetica, Arial;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a,p{ 
+    color: rgb(245, 250, 247); 
+    text-decoration: none;
+    
+}
+a:hover{
+    color: rgb(4, 73, 7);
+    transition: 0.5s,
+    
+
+}
+
