@@ -1,0 +1,196 @@
+body {
+    background-color:#fff;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 10px;
+    color: rgb(245, 250, 247); 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+/* Imagen y Titulo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.nombre_marca {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: default;
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    font-weight: 50px;
+}
+
+.nombre_marca h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 5em;
+    margin: 0px;
+}
+
+.nombre_marca h3 {
+    font-family: 'Helvetica', cursive;
+    font-weight: 80%;
+    font-size: 1em;
+    margin: 0px;
+}
+
+/* Menu de Navegacion */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Lato";
+    margin: 5px;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    color: rgb(11, 178, 76);
+    cursor: pointer;
+}
+
+/* Cuerpo Principal */
+
+main p {
+    display: block;
+    color: black;
+    width: 100%;
+}
+
+/* Falta laburar con Grid para que se acomode responsivamente, si no hay probar con flex */
+
+.container_home {  
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 50%;
+    gap: 0% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "catalogo_1 catalogo_2 contacto";
+}
+  
+  .catalogo_1 { 
+    grid-area: catalogo_1; 
+    display: flex;
+    width: 100%;
+    border: #000 solid 2px;
+    border-radius: 15px;
+}
+  
+  .catalogo_2 { 
+    grid-area: catalogo_2; 
+    display: flex;
+    width: 100%;
+    border: #000 solid 2px;
+    border-radius: 15px;
+}
+  
+  .contacto { 
+    grid-area: contacto; 
+    display: flex;
+    width: 100%;
+    border: #000 solid 2px;
+    border-radius: 15px;
+}
+  
+
+/* Footer */
+
+footer {
+    background-color: rgb(11, 178, 76);
+    border-top: 2px solid black;
+    min-height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redes_sociales a {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+
+}
+
+footer a, p { 
+    color: #fff; 
+    text-decoration: none;
+    font-family: Helvetica, Arial;
+    font-size: 15px;
+    text-align: center;
+    margin: 4px;
+}
+
+a:hover {
+    color: rgb(4, 73, 7);
+    transition: 0.5s;
+}
+
+
+
+/* Media Query*/
+
+@media only screen and (max-width:950px){
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding: 10px 0px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
