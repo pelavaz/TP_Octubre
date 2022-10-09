@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="estilo_index.css">
+    <link rel="shortcut icon" href="Imagenes/TheFirstLogo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Combo&family=Manjari:wght@100;400&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6cb9562bc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <style>
+
+.butn {
+    background-color: lightblue;
+    color:white;
+    border-radius: 20px;
+    font-size:1em;
+    text-decoration: none;
+    padding:1%;
+    text-align:Center;
+    border: 1px white
+}
+        
+.form {
+
+    margin:0% 4% 0% 4%;
+    padding:1%;
+    border-top: 1px solid lightblue;
+    font-weight: bold;
+        }
+
+.iframe {
+    width:800px;
+    height: 700px;
+        }
+
+@media only screen and (max-width:993px){
+
+    .iframe {
+            width:600px;
+            height: 500px;
+    }
+}
+
+@media only screen and (max-width:769px){
+
+.iframe {
+        width:400px;
+        height: 300px;
+}
+}
+
+@media only screen and (max-width:400px){
+
+.iframe {
+        width:200px;
+        height: 100px;
+}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  
+}
+
+.hijos {
+width:250px;
+height:50px;
+margin:0% 5% 5% 5%;
+text-align: center;
+
+}
+
+.hijos p {
+    font-weight: bold;
+    margin:0% 5% 5% 5%;
+}
+
+        </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/TheFirstLogo.png" alt="logo">
+        </div>
+
+        <div class="nombre_marca">
+            <h1>The First</h1>
+            <h3>INDUMENTARIA</h3>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="catalogo.html">CATALOGO</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+<section>   
+        <div>
+            <h1 style="text-align:center;font-family: 'Qwitcher Grypen', cursive;font-size: 4em;font-weight: 700;">Contactanos para saber todas las novedades!</h1>
+         <div class="form">  
+            <form class="row g-3 needs-validation" novalidate action="https://formspree.io/f/xayknqaz"
+            method="POST">
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" name="Nombre" class="form-control" id="validationCustom01" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" name="Apellido" class="form-control" id="validationCustom02"required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Mail</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="email" name="Email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" name="Ciudad" class="form-control" id="validationCustom03"required>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Localidad</label>
+                <select class="form-select" name="Localidad" id="validationCustom04">
+                  <option selected disabled value="">Seleccionar</option>
+                  <option value='Capital Federal'>Capital Federal</option>
+                  <option value='Zona Sur'>Zona Sur</option>
+                  <option value='Zona Oeste'>Zona Oeste</option>
+                  <option value='Otro'>Otro</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Código Postal</label>
+                <input type="number" name="Codigo Postal" class="form-control" id="validationCustom05">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck"required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepto términos y condiciones
+                  </label>
+                </div>
+              </div>
+              <br><br>
+              <div class="col-12">
+                <button class="butn" type="submit">Submitir</button>
+              </div>
+            </form>  
+          </div>
+        </div>
+        <br><br>
+
+        <div style="text-align: center;margin:0% 4% 0% 4%;padding:1%;border-top: 1px solid lightblue;border-bottom: 1px solid lightblue;">
+            <h1 style="text-align:center;font-family: 'Qwitcher Grypen', cursive;font-size: 3em;font-weight: 700;">Dónde estamos?</h1>
+            <i class="fa-solid fa-location-dot" style="font-size: 20px; color:red"></i>Av. Juan B. Justo 2600<br>
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3683861850723!2d-58.44605548477067!3d-34.59484508046177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f58fce8b0f%3A0xb2c9e1d960873aa0!2sAv.%20Juan%20B.%20Justo%202600%2C%20C1414%20CABA!5e0!3m2!1ses!2sar!4v1664752208480!5m2!1ses!2sar"></iframe>
+        </div>
+        <br>
+
+       <div style="text-align:center; display:block;font-style: oblique;">
+        <div><p><span><i class="fa-solid fa-envelope"></i></span><b>  Email:</b> marcaderopa@gmail.com</p> </div> 
+        <div><p><span><i class="fa-solid fa-phone"></i></span><b>  Telefono:</b> 0800-4568-7777</p></div>
+        <div><p><span><i class="fa-solid fa-clock"></i></span><b>  Horarios:</b> Lunes a Viernes de 10.00 a 13.30hs / 14.30 a 18hs - Sabados: 10.00 a 13.30hs</p></div>
+       </div>
+       <br><br>
+        <div class="container">   
+          <div class="hijos"><p><span><i class="fa-brands fa-instagram" style="font-size: 2em; color:rgb(239, 34, 181)"></i></span>
+            <i> @thefirst1978</i>
+           </div>
+           <div class="hijos"><p><span><i class="fa-brands fa-whatsapp" style="font-size: 2em; color:rgb(41, 183, 41)"></i></span>
+            <i> +549-11-45678912 </i></p>
+           </div>
+           <div class="hijos"><p><span><i class="fa-brands fa-facebook" style="font-size: 2em; color:navy"></i></span>
+            <i> thefirst1978ind</i></p>
+           </div>
+        </div>
+<br><br>
+    </section>
+    
+    <footer>
+        <a href="index.html">INICIO</a>
+        <div class="redes_sociales">
+            <a href="https://instagram.com/" target = "_blank" class= "fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/" target = "_blank" class= "fa-brands fa-twitter"></a>
+            <a href="https://facebook.com/" target = "_blank" class= "fa-brands fa-facebook"></a>
+            <!--
+            <a href="mailto:marcaderopa@gmail.com" target = "_blank" class= "fa-regular fa-envelope">
+            <a href="#" target = "_blank" class= "fa-brands fa-whatsapp"></a>
+            -->
+        </div>
+        <div>
+            <p> Para mas información, <a href="contacto.html"><b>CONTACTÁNOS</b></a> </p>
+        </div>
+        <div class="pie_de_pagina">
+            <p>© 2022 <b>Centurion - Marago - Vazquez.</b> Todos los derechos reservados.</p>
+            <a href="https://www.buenosaires.gob.ar/educacion/codo-codo" alt="Codo a Codo 4.0" target="_blank">Codo a Codo 4.0</a>
+        </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
