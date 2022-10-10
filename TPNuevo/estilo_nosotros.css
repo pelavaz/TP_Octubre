@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Seccion Descripcion Nosotros */
+
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Qwitcher Grypen', cursive;
+    color:rgb(0, 0, 0);
+
+}
+
+section h1 {
+    text-align: center;
+    font-family: 'Qwitcher Grypen' cursive;
+    font-size: 4em;
+}
+
+section h6 {
+    margin-top: 20px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 1%;
+    text-align: Center;
+    font-family: 'Playfair Display', serif;
+}
+
+section p {
+    box-shadow: 5px 5px 5px 5px lightblue;
+    color:rgb(0, 0, 0);
+    display: block;
+    margin: 0 10% 0 10%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    padding: 2%;
+}
+
+/* Contenedor Tarjetas */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bloque1 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:5%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px lightblue;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque2 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:5%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgb(66, 78, 66);
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque3 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:5%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px beige;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque1 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+    
+.bloque2 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+    
+.bloque3 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+    
+.btn {
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    font-size:1.2em;
+    text-decoration: none;
+    padding:2%;
+    cursor: pointer;
+}
+    
+.butn {
+    background-color: lightblue;
+    color:white;
+    border-radius: 20px;
+    font-size:1.5em;
+    text-decoration: none;
+    padding:1%;
+    text-align:Center;
+    cursor: pointer;
+}
+    
