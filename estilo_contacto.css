@@ -1,0 +1,69 @@
+.butn {
+    background-color: lightblue;
+    color:white;
+    border-radius: 20px;
+    font-size:1em;
+    text-decoration: none;
+    padding:1%;
+    text-align:Center;
+    border: 1px white
+}
+        
+.form {
+
+    margin:0% 4% 0% 4%;
+    padding:1%;
+    border-top: 1px solid lightblue;
+    font-weight: bold;
+        }
+
+.iframe {
+    width:800px;
+    height: 700px;
+        }
+
+@media only screen and (max-width:993px){
+
+    .iframe {
+            width:600px;
+            height: 500px;
+    }
+}
+
+@media only screen and (max-width:769px){
+
+.iframe {
+        width:400px;
+        height: 300px;
+}
+}
+
+@media only screen and (max-width:400px){
+
+.iframe {
+        width:200px;
+        height: 100px;
+}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  
+}
+
+.hijos {
+width:250px;
+height:50px;
+margin:0% 5% 5% 5%;
+text-align: center;
+
+}
+
+.hijos p {
+    font-weight: bold;
+    margin:0% 5% 5% 5%;
+}
