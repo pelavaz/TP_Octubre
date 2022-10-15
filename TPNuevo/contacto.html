@@ -1,120 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formulario de contacto</title>
-    <script src="https://kit.fontawesome.com/fc6033ad3f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilo_header_footer.css">
+  <link rel="stylesheet" href="estilo_contacto.css">
+  <link rel="shortcut icon" href="Imagenes/TheFirstLogo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Combo&family=Manjari:wght@100;400&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d6cb9562bc.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div style="background:rgb(6, 6, 5);padding:5px;color:white;text-align: center;font-size:2em">
-  <h4>Resize the browser window to see the responsive effect.</h4>
-</div>
 
-<!-- Header -->
-<div class="header">
-  <h1>My Website</h1>
-  <p>With a <b>flexible</b> layout.</p>
-</div>
+  <header>
+    <div class="logo">
+        <img src="Imagenes/TheFirstLogo.png" alt="logo">
+    </div>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
-<!-- Contenedor font awesome -->
-<p style="font-size:2em;text-align:center;font-weight:bold;font-family:Arial">Contactenos!!!</p>
+    <nav class="menu">
+        <a href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="catalogo_hombres.html">CATALOGO HOMBRE</a>
+        <a href="catalogo_mujeres.html">CATALOGO MUJER</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
 
-<div class="contenedor">
- <div class="hijo"><span class="fa-solid fa-envelope"></span> vale@gmail.com<br>
-  <span class="fa-solid fa-phone"></span> (011) 5555-5555 <br>
-  <span class="fa-brands fa-whatsapp"></span>  +54 9 11 5555 5555 <br>
-</div>
-<div class="hijo"><span class="fa-brands fa-instagram"></span> @valeeeeeeee<br>
-  <span class="fa-brands fa-facebook"></span> Valeeeeee (@valeeeeeee) <br>
+  <main>   
 
-</div>
+    <h1 class="titulo">Contactanos para saber todas las novedades!</h1>
+      
+    <div class="form">  
+      <form class="row g-3 needs-validation" novalidate action="https://formspree.io/f/xayknqaz" method="POST">
 
-</div>
-         
-       
-</section>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" name="Nombre" class="form-control" id="validationCustom01" required>
+        </div>
 
-<aside> 
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" name="Apellido" class="form-control" id="validationCustom02"required>
+        </div>
 
-    <form
-    action="https://formspree.io/f/xayknqaz"
-    method="POST">
- 
- 
-    <!-- Ingreso del nombre -->
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Mail</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="email" name="Email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"required>
+            </div>
+        </div>
 
-    <div id="formulario2">
-  Nombre:<br>
-         <input class="formularios" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." required>
-         <br><br>
- 
-         Apellido:<br>
-         <input class="formularios" type="text" name="apell" placeholder="Ingrese su nombre aqui..." required>
-         <br><br>
- 
-       Dirección:<br>
-         <input class="formularios" type="text" name="Dirección" placeholder="Ingrese su nombre aqui..." required>
-         <br><br>
-       
-       <!-- Ingreso de Ciudad -->
-       Ciudad:<br>
-       <input class="formularios" type="text" name="Ciudad" id="ciu" value="C.A.B.A">
-       <br><br>
-   
-   <!-- Ingreso del apellido -->
-  Fecha nacimiento:<br>
-   <input class="formularios" type="date" name="fecha nac" id="fecha nac" >
-   <br><br>
-   </fieldset>
-   <br>
- 
-   <fieldset>
-     <legend><b>Nivel de satisfacción <span class="fa-sharp fa-solid fa-check"></span></b></legend>
- 
-  <!-- Control deslizante-->
-  <label for="puntaje"> Puntuación de la empresa: </label>
-  <input type="range" name="puntaje" id="puntaje" min="1" max="10" value="10" step="1" >
-  <!-- step="1" (el paso, min="1" max="10" value="10" (valor por defeto) -->
-  <br><br>
- 
-      <b>¿Qué fue lo que más le gustó?</b> <br>
-      <select class="formularios" name="opinion">
-        <option>Experiencia de compra</option>
-        <option>Variedad de artículos</option>
-        <option>Velocidad de Entrega</option>
-        <option>Otros</option>
-    </select>
-           
- 
- </fieldset>
- 
- <br>
- <b>Your message:</b><br>
- <textarea class="formularios" name="message" cols="40" rows="5"></textarea><br>
- <input type="checkbox" required> Acepto términos y condiciones 
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" name="Ciudad" class="form-control" id="validationCustom03"required>
+        </div>
 
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Localidad</label>
+          <select class="form-select" name="Localidad" id="validationCustom04">
+            <option selected disabled value="">Seleccionar</option>
+            <option value='Capital Federal'>Capital Federal</option>
+            <option value='Zona Sur'>Zona Sur</option>
+           <option value='Zona Oeste'>Zona Oeste</option>
+            <option value='Otro'>Otro</option>
+          </select>
+        </div>
 
- 
-   <br><br>
-   <button class=botones type="reset">Borrar</button>
-   <input class=botones type="submit" value="Enviar">
-   <br><br>
-  </div>
- 
- </form>
-   
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Código Postal</label>
+          <input type="number" name="Codigo Postal" class="form-control" id="validationCustom05">
+        </div>
 
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"required>
+            <label class="form-check-label" for="invalidCheck">Acepto términos y condiciones</label>
+          </div>
+        </div>
 
-   </aside>
+        <div class="col-12">
+          <button class="butn" type="submit">Enviar!</button>
+        </div>
+      </form>  
+    </div>
+
+    <div class="mapa">
+      <h1 class="titulo">Dónde estamos?</h1>
+      <div class="direccion">
+        <i class="fa-solid fa-location-dot" style="font-size: 20px; color:red"></i>Av. Juan B. Justo 2600
+      </div>      
+      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3683861850723!2d-58.44605548477067!3d-34.59484508046177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f58fce8b0f%3A0xb2c9e1d960873aa0!2sAv.%20Juan%20B.%20Justo%202600%2C%20C1414%20CABA!5e0!3m2!1ses!2sar!4v1664752208480!5m2!1ses!2sar"></iframe>
+    </div>
+
+    <div class="medios_de_contacto">
+      <h1 class="titulo">Nuestras redes de contacto!</h1>
+      <div>
+        <div style="text-align:center; display:block;font-style: oblique;">
+          <div>
+            <p><span><i class="fa-solid fa-envelope"></i></span><b>  Email:</b> thefirst1978@gmail.com</p> 
+          </div> 
+          <div>
+            <p><span><i class="fa-solid fa-phone"></i></span><b>  Telefono:</b> 0800-4568-7777</p>
+          </div>
+          <div>
+            <p><span><i class="fa-solid fa-clock"></i></span><b>  Horarios:</b> Lunes a Viernes de 10.00 a 13.30hs / 14.30 a 18hs - Sabados: 10.00 a 13.30hs</p>
+          </div>
+         </div>
+
+        <div class="container">   
+          <div class="hijos"><p><span><i class="fa-brands fa-instagram" style="font-size: 2em; color:rgb(239, 34, 181)"></i></span><i> @thefirst1978</i>
+          </div>
+          <div class="hijos"><p><span><i class="fa-brands fa-whatsapp" style="font-size: 2em; color:rgb(41, 183, 41)"></i></span><i> +549-11-45678912 </i></p>
+          </div>
+          <div class="hijos"><p><span><i class="fa-brands fa-facebook" style="font-size: 2em; color:navy"></i></span><i> thefirst1978ind</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+    
+  <footer>
+    <a href="index.html">INICIO</a>
+   <div class="redes_sociales">
+      <a href="https://instagram.com/" target = "_blank" class= "fa-brands fa-instagram"></a>
+      <a href="https://twitter.com/" target = "_blank" class= "fa-brands fa-twitter"></a>
+      <a href="https://facebook.com/" target = "_blank" class= "fa-brands fa-facebook"></a>
+    </div>
+    <div>
+      <p> Para mas información, <a href="contacto.html"><b>CONTACTÁNOS</b></a> </p>
+    </div>
+    <div class="pie_de_pagina">
+      <p>© 2022 <b>Centurion - Marago - Vazquez.</b> Todos los derechos reservados.</p>
+      <a href="https://www.buenosaires.gob.ar/educacion/codo-codo" alt="Codo a Codo 4.0" target="_blank">Codo a Codo 4.0</a>
+    </div>
+  </footer>
 
 </body>
 </html>
