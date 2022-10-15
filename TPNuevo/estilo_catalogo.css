@@ -3,7 +3,7 @@
 main {
     width: 100%;
     height: 100%;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(255, 255, 255);
     font-family: Helvetica, Arial;
     color:rgb(0, 0, 0);
     box-sizing: border-box;
@@ -180,29 +180,34 @@ main {
 
 /* Comprar */
 
-.producto .descripcion_producto .comprar {
+.boton_comprar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #fff;
+    border: none;
+    text-align: center;
     margin-top: 5px;
     padding: 5px;
     border-radius: 4px;
     font-size: 15px;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
-.producto .descripcion_producto .comprar a {
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-
-}
-
-.producto .descripcion_producto .comprar:hover {
+.comprar:hover {
     background-color: rgb(132, 240, 159);
     transition-property: box-shadow;
-    transition-duration: 0.5s;
     transform: scale(1.06);
+    opacity: 1;
 }
 
 /* --- Media Query --- */
@@ -222,5 +227,59 @@ main {
     }
     .descripcion_seccion  p {
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .descripcion_seccion { 
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .descripcion_seccion  h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .descripcion_seccion  p {
+        font-size: 10px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .producto {
+        max-width: 350px;
+        max-height: 300px;
+    }
+
+    .producto .foto_producto img {
+        width: 220px;
+        height: 100%;
+    }
+
+    .producto .descripcion_producto .titulo_ropa {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .producto .descripcion_producto h2 {
+        font-size: 20px;
+    }
+
+    .logo_precio {
+    font-size: 10px;
+    }
+
+    .logo_precio h3 {
+        font-size: 8px;
+    }
+
+    .producto .descripcion_producto .talles ul li {
+        font-size: 8px;
     }
 }
