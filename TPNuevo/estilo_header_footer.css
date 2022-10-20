@@ -120,25 +120,28 @@ footer a, p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        min-height: 200px;
     }
 
     .logo img {
-        width: 300px;
+        width: 250px;
      }
 
     .menu {
         display: flex;
         align-items: flex-end;
         flex-flow: column;
-        padding: 10px;
+        padding: 5px;
+        font-size: 14px;
     }
 
     .menu > a {
-        padding: 10px;
+        padding: 5px;
+        margin-right: 5px;
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 450px) {
 
     header {
         min-height: 150px;

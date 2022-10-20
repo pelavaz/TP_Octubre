@@ -8,7 +8,7 @@ main {
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 4em;
   font-weight: 700;
-  padding: 15px;
+  padding: 12px;
   text-align: center; 
   color: rgb(0, 0, 0);
 }
@@ -46,7 +46,7 @@ main {
 .direccion {
   font-family: 'helvetica', cursive;
   font-size: 1em;
-  padding: 10px;
+  padding: 15px;
 }
 
 .iframe {

@@ -23,14 +23,15 @@ main {
 }
 
 .descripcion_seccion h1 {
-    font-size: 25px;
+    font-size: 30px;
     padding: 15px;
     margin: 0;
+    font-family: 'Qwitcher Grypen', cursive;
 }
 
 .descripcion_seccion  p {
     font-size: 14px;
-    font-family: Helvetica, Arial;
+    font-family: 'Playfair Display', serif;
     color:rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 15px;
