@@ -49,14 +49,14 @@ header {
 }
 
 .menu > a:hover {
-    color: rgb(11, 178, 76);
+    color: darkcyan;
     cursor: pointer;
 }
 
 /* --- Footer --- */
 
 footer {
-    background-color: rgb(11, 178, 76);
+    background-color: lightblue;
     border-top: 2px solid black;
     min-height: 15vh;
     width: 100%;
@@ -82,7 +82,7 @@ footer {
 }
 
 footer a, p { 
-    color: #fff; 
+    color: rgb(0, 0, 0); 
     text-decoration: none;
     font-family: Helvetica, Arial;
     font-size: 15px;
@@ -91,7 +91,7 @@ footer a, p {
 }
 
 .redes_sociales > a:hover {
-    color: rgb(4, 73, 7);
+    color: darkcyan;
     transition: 0.5s;
 }
 

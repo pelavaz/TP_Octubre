@@ -7,7 +7,7 @@ function traerDatosAPI() {
             `<div class="tarjeta">
                          <img src = "${datos.results[0].picture.large}"</img><br> 
                          ${datos.results[0].name.title}, ${datos.results[0].name.last}, ${datos.results[0].name.first}<br>
-                         ${datos.results[0].email}<br>
+                         ${datos.results[0].location.city}, ${datos.results[0].location.country} <br>
                          ${datos.results[0].dob.age} años<br>`
         })
 
