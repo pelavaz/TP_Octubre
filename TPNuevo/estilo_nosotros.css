@@ -45,6 +45,7 @@ section p {
 }
 
 .btn:hover {
+    color: darkcyan;
     transform: scale(1.10);
 }
     
@@ -56,6 +57,11 @@ section p {
     padding:1%;
     text-align:Center;
     cursor: pointer;
+}
+
+.butn:hover {
+    color: darkcyan;
+    transform: scale(1.10);
 }
 
 /* Contenedor Tarjetas */
