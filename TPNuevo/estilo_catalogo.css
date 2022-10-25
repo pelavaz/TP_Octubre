@@ -32,10 +32,9 @@ main {
 }
 
 .descripcion_seccion  p {
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: 'Playfair Display', serif;
     color:rgb(0, 0, 0);
-    text-transform: uppercase;
     padding: 15px;
     margin-left: 20px;
     text-align: justify; 
@@ -181,6 +180,9 @@ main {
     transition-duration: 0.5s;
 }
 
+.active {
+    background-color: darkcyan;
+}
 
 /* Comprar */
 
@@ -226,7 +228,7 @@ main {
     }
 
     .descripcion_seccion  p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -240,7 +242,7 @@ main {
         }
 
     .descripcion_seccion  p {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 }
 
@@ -261,7 +263,7 @@ main {
         padding: 5px;
     }
     .descripcion_seccion  p {
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin: 0px;
         padding: 5px;
     }

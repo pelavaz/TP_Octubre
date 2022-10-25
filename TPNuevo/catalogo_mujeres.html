@@ -62,10 +62,10 @@
                 <div class="talles">
                     <h4>Talles</h4>
                         <ul>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
+                            <li class="talle">S</li>
+                            <li class="talle">M</li>
+                            <li class="talle">L</li>
+                            <li class="talle">XL</li>
                         </ul>
                 </div>
                 <div class="boton_comprar">
@@ -95,10 +95,10 @@
                 <div class="talles">
                     <h4>Talles</h4>
                         <ul>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
+                            <li class="talle">S</li>
+                            <li class="talle">M</li>
+                            <li class="talle">L</li>
+                            <li class="talle">XL</li>
                         </ul>
                 </div>
                 <div class="boton_comprar">
@@ -128,10 +128,10 @@
                 <div class="talles">
                     <h4>Talles</h4>
                         <ul>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
+                            <li class="talle">S</li>
+                            <li class="talle">M</li>
+                            <li class="talle">L</li>
+                            <li class="talle">XL</li>
                         </ul>
                 </div>
                 <div class="boton_comprar">
@@ -161,10 +161,10 @@
                 <div class="talles">
                     <h4>Talles</h4>
                         <ul>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
+                            <li class="talle">S</li>
+                            <li class="talle">M</li>
+                            <li class="talle">L</li>
+                            <li class="talle">XL</li>
                         </ul>
                 </div>
                 <div class="boton_comprar">
@@ -192,6 +192,19 @@
             <a href="https://www.buenosaires.gob.ar/educacion/codo-codo" alt="Codo a Codo 4.0" target="_blank">Codo a Codo 4.0</a>
         </div>
     </footer>
+
+    <script>
+        const links=document.querySelectorAll('.talle');
+        for (let i=0;i<links.length;i++){
+            links[i].addEventListener('click', ()=>{
+                const active=document.querySelector('.active');
+                if (active){
+                    active.classList.remove('active')
+                }
+                links[i].classList.add('active')
+            })
+        }
+    </script>
 
 </body>
 
