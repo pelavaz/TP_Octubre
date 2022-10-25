@@ -1,0 +1,308 @@
+/* --- Main --- */
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Qwitcher Grypen' cursive;/*font-family: 'Playfair Display', serif;*/
+    color:rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+main h1{
+    margin: 20px 30% 0px 30%;
+    background-color: rgb(95, 180, 106);
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 1%;
+    text-align: Center;
+    
+}
+
+/* Descripcion */
+
+.descripcion_seccion { 
+    display: inline-flex;
+    flex-direction: row;
+    padding: 4px;
+    margin: 20px;
+    text-align: center; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+}
+
+.descripcion_seccion h1 {
+    font-size: 25px;
+    padding: 15px;
+    margin: 0;
+    /*font-family: 'playfairDisplay', serif;*/
+    font-family: 'Qwitcher Grypen' cursive;
+    font-weight: 600;
+    text-align: center;
+}
+
+.descripcion_seccion  p {
+    
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Qwitcher Grypen' cursive;
+    font-weight: 600;
+    font-size: 1em;
+    color:rgb(0, 0, 0);
+    /*text-transform: uppercase;*/
+    padding: 15px;
+    margin-left: 20px;
+    text-align: justify; 
+   
+}
+
+/* Productos */
+
+.container {  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0px;
+    padding: 15px;
+}
+
+.producto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.producto .foto_producto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+    background-color: #fff;
+
+}
+
+.producto .foto_producto img {
+    width: 300px;
+    height: 100%;
+}
+
+.producto:hover {
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.4);
+    transition-property: box-shadow;
+    transition-duration: 0.8s;
+    transform: scale(1.02);
+}
+
+
+/* Descripcion */
+
+.producto .descripcion_producto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 40%;
+    max-height: 100%;
+    padding: 10px;
+    background-color: rgb(238, 235, 235);
+}
+
+.producto .descripcion_producto .titulo_ropa {
+    margin: 2px;
+    padding: 4px;
+    background-color: rgb(172, 167, 167);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.producto .descripcion_producto h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+.logo_precio {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.logo_precio h3 {
+    font-size: 10px;
+    padding: 3px;
+    margin: 2px;
+}
+
+.producto .descripcion_producto .descripcion_articulos {
+    font-style: italic;
+    font-size: 10px;
+    text-align: justify;
+    color:rgb(0, 0, 0);
+    padding: 4px;
+    margin: 0px;
+}
+
+/* Talles */
+
+.producto .descripcion_producto .talles h4 {
+    font-size: 12px;
+    text-align: left;
+    padding: 1px;
+    margin: 1px;
+}
+
+.producto .descripcion_producto .talles ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3px;
+}
+
+.producto .descripcion_producto .talles ul li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 0.4em;
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.4);
+    color:rgb(0, 0, 0);
+}
+
+.producto .descripcion_producto .talles ul li:hover {
+    background-color: rgb(132, 240, 159);
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+/* Comprar */
+
+.boton_comprar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background-color: rgb(132, 240, 159);
+    transition-property: box-shadow;
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+/* --- Media Query --- */
+
+@media only screen and (max-width:985px){
+    .container {
+        flex-direction: column;
+    }
+    .descripcion_seccion  p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+    }
+    .descripcion_seccion  p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .descripcion_seccion { 
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .descripcion_seccion  h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .descripcion_seccion  p {
+        font-size: 10px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .producto {
+        max-width: 350px;
+        max-height: 300px;
+    }
+
+    .producto .foto_producto img {
+        width: 220px;
+        height: 100%;
+    }
+
+    .producto .descripcion_producto .titulo_ropa {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .producto .descripcion_producto h2 {
+        font-size: 20px;
+    }
+
+    .logo_precio {
+    font-size: 10px;
+    }
+
+    .logo_precio h3 {
+        font-size: 8px;
+    }
+
+    .producto .descripcion_producto .talles ul li {
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* --- Header --- */
+
+header {
+    width: 100%;
+    min-height: 250px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: rgb(245, 250, 247); 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+/* Imagen y Titulo */
+
+.logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+   width: 100%;
+}
+
+/* Menu de Navegacion */
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-flow: row;
+    font-family: "Lato";
+    padding: 3px;
+}
+
+.menu > a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    margin-right: 20px;
+}
+
+.menu > a:hover {
+    color: rgb(11, 178, 76);
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+
+footer {
+    background-color: rgb(11, 178, 76);
+    border-top: 2px solid black;
+    min-height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redes_sociales > a {
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+
+}
+
+footer a, p { 
+    color: #fff; 
+    text-decoration: none;
+    font-family: Helvetica, Arial;
+    font-size: 15px;
+    text-align: center;
+    margin: 4px;
+}
+
+.redes_sociales > a:hover {
+    color: rgb(4, 73, 7);
+    transition: 0.5s;
+}
+
+
+
+/* --- Media Query --- */
+
+@media only screen and (max-width:985px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 300px;
+     }
+
+    .menu {
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .menu > a {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    header {
+        min-height: 150px;
+    }
+
+    .logo img {
+        width: 200px;
+     }
+
+     .menu {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .menu > a {
+        margin-right: 0px;
+        padding: 5px;
+    }
+}
