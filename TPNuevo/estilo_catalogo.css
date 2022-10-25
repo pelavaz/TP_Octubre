@@ -175,7 +175,7 @@ main {
 }
 
 .producto .descripcion_producto .talles ul li:hover {
-    background-color: darkcyan;
+    background-color: lightblue;
     transition-property: box-shadow;
     transition-duration: 0.5s;
 }
